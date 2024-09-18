@@ -55,4 +55,15 @@
         <label for="foto">Foto des Mangels:</label><br>
         <input type="file" id="foto" name="foto"><br><br>
 
-        <l
+        <label for="anmerkungen">Zusätzliche Anmerkungen:</label><br>
+        <textarea id="anmerkungen" name="anmerkungen"></textarea><br><br>
+
+        <input type="submit" value="Absenden">
+    </form>
+    <script>
+        document.getElementById("maengelForm").onsubmit = function() {
+            alert("Mängelmeldung eingereicht!");
+        };
+    </script>
+</body>
+</html>
